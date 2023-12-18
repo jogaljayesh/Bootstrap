@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>photo figures</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	
+.body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	background-color: black;
+/* 		#3d3b32; */
+}
+.parallax {
+	width: 100vw;
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	transition: transform 250ms ease-in;
+	border-radius: 5px;
+  	filter: grayscale(100%);
+
+	
+}
+.parallax:hover{
+	transform: scale(0.9);
+	filter: grayscale(0%);
+}
+.parallax:hover .caption {
+	opacity: 1;
+	transform: translate(-50%, -50%);
+}
+.caption {
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	opacity: 0;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Photo Story</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body class="body">
+	<div class="row">
+		<div class="text-center fixed-top">
+			<!-- <p class="header-text alert alert-secondary">This is #cpc-photo-figures #codepenchallenge. Best Viewed in smaller screen sizes or view original
+			</p> -->
+		</div>
+		<div class="container-fluid">
+
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/104773267-cup-of-cappuccino-coffee-with-a-pattern-of-heart-on-milk-foam.jpg');">
+						<figcaption class="caption" data-index="1">
+							A heart latte coffe cup top view
+							<a target="_blank" href="images/104773267-cup-of-cappuccino-coffee-with-a-pattern-of-heart-on-milk-foam.jpg" class="btn btn-secondary">View Original </a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/cold-summer-mojito-cocktail-with-lime-mint-ice-glass_778722-25.avif');">
+						<figcaption class="caption" data-index="1">
+							A glass filled with ice and a straw
+							<a target="_blank" href="images/cold-summer-mojito-cocktail-with-lime-mint-ice-glass_778722-25.avif" class="btn btn-secondary">View Original </a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/360_F_199443836_bypwjUttdsG10NJ227QroFX3hKTkObuq.jpg');">
+						<figcaption class="caption" data-index="2">An aerial view of forest from above <a target="_blank" href="images/360_F_199443836_bypwjUttdsG10NJ227QroFX3hKTkObuq.jpg" class="btn btn-secondary">View Original </a> </figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/62ad99754582c99c94dcfc1ec4f08ac1.jpg');">
+						<figcaption class="caption" data-index="3">A person standing on top of the sandy hill
+							<a target="_blank" href="images/62ad99754582c99c94dcfc1ec4f08ac1.jpg" class="btn btn-secondary">View Original </a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/river-runs-through-city-night_900958-36140.jpg');">
+						<figcaption class="caption" data-index="4">A river running through the city at night <a target="_blank" href="images/river-runs-through-city-night_900958-36140.jpg" class="btn btn-secondary">View Original </a> </figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/pexels-can-i̇ğdeli-18230812.jpg');">
+						<figcaption class="caption" data-index="5">A massive stone becoming bridge over the water body <a target="_blank" href="images/pexels-can-i̇ğdeli-18230812.jpg" class="btn btn-secondary">View Original </a></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/XSE25i_1.jpg');">
+						<figcaption class="caption" data-index="6">A light bulb written coffee within it <a target="_blank" href="images/XSE25i_1.jpg" class="btn btn-secondary">View Original </a></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/view-from-top-where-water-is-flowing-snow-covered-mountains_445983-2507.avif');">
+						<figcaption class="caption" data-index="7">A snow mountain and water body view <a target="_blank" href="images/view-from-top-where-water-is-flowing-snow-covered-mountains_445983-2507.avif" class="btn btn-secondary">View Original </a></figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<figure class="parallax" style="background-image: url('images/secret-bay-areal-6557091724cd5.jpg');">
+						<figcaption class="caption" data-index="8">A scenic mountain view <a target="_blank" href="images/secret-bay-areal-6557091724cd5.jpg" class="btn btn-secondary">View Original </a></figcaption>
+					</figure>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
+
+</body>
+</html>
