@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>textboxes</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	
+:root {
+  --lilac: #845ec2;
+  --fuchsia: #d65db1;
+  --apricot: #ff9671;
+  --tangerine: #ffc75f;
+}
+
+.bg-lilac {
+  background: var(--lilac);
+}
+
+.bg-fuchsia {
+  background: var(--fuchsia);
+}
+
+.bg-apricot {
+  background: var(--apricot);
+}
+
+.bg-tangerine {
+  background: var(--tangerine);
+}
+
+.move-4 {
+  animation-duration: 4s;
+}
+
+.move-5 {
+  animation-duration: 5s;
+}
+
+.move-6 {
+  animation-duration: 6s;
+}
+
+.move-7 {
+  animation-duration: 7s;
+}
+
+.move {
+  position: relative;
+  animation-name: move;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.ms-n5 {
+  margin-left: -3rem;
+}
+
+@media (max-width: 991px) {
+  .ms-n5 {
+    margin-left: 0;
+  }
+}	
+</style>
+
+</head>
+<body>
+<div class="container d-flex align-items-center">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 pt-5 text-light font-monospace lh-lg d-flex justify-content-between align-items-stretch align-items-md-start">
+
+    <div class="col p-5 shadow rounded-4 z-0 flex-fill move move-5 bg-lilac">
+      <h2>Lilac Box</h2>
+      <p class="me-5 mb-0">Lorem ipsum dolor sit amet elementum porttitor enim magna vestibulum sagittis fusce libero odio labore.</p>
+    </div>
+
+    <div class="col p-5 mt-md-5 mt-0 ms-n5 shadow rounded-4 z-1 flex-fill move move-6 bg-tangerine ">
+      <h2>Tangerine Box</h2>
+      <p class="me-5 mb-0">Lacus vivamus faucibus blandit habitasse faucibus malesuada neque. Consequat aliqua eros dui vivamus convallis mauris condimentum id dolore labore risus.</p>
+    </div>
+
+    <div class="col p-5 ms-n5 shadow rounded-4 z-2 flex-fill move move-4 bg-fuchsia">
+      <h2>Fuchsia Box</h2>
+      <p class="me-5 mb-0">Consequat sagittis pulvinar quis ut curabitur. Lacinia turpis augue ultricies adipiscing massa aliqua justo aenean senectus tortor non sodales velit.</p>
+    </div>
+
+    <div class="col p-5 mt-md-5 mt-0 ms-n5 shadow rounded-4 z-3 flex-fill move move-7 bg-apricot">
+      <h2>Apricot Box</h2>
+      <p class="mb-0">Lacinia turpis augue ultricies adipiscing massa aliqua justo aenean senectus tortor non sodales velit. Lacus vivamus faucibus blandit habitasse faucibus malesuada neque. .</p>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
