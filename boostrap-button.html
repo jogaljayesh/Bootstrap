@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>boostrap-button</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style type="text/css">
+body {
+  font-family: 'Raleway';
+}
+header {
+  text-align: center;
+  padding: 10px 0;
+  background: #fff;
+  color: #000;
+}
+header h1 {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-size: 42px;
+  font-weight: normal;
+}
+
+section .wrap {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 120px 0 60px 0;
+}
+section .btn {
+  margin: 0 30px 60px 30px;
+}
+section.one {
+  background: #1abc9c;
+}
+section.two {
+  background: #f5d76e;
+}
+section.three {
+  background: #d24d57;
+}
+section.four {
+  background: #f1a9a0;
+}
+section.five {
+  background: #c5eff7;
+}
+section.six {
+  background: #fde3a7;
+}
+section.seven {
+  background: #81cfe0;
+}
+.btn {
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 13px 17px;
+  border: none;
+  -webkit-border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 2px;
+  -moz-background-clip: padding;
+  border-radius: 2px;
+  background-clip: padding-box;
+  transition: color 0.2s linear, background-color 0.2s linear;
+}
+.btn.btn-default {
+  color: #000;
+  background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+}
+.btn.btn-default.btn-border {
+  border-color: #ffffff;
+  color: #fff;
+}
+.btn.btn-default.btn-3d {
+  box-shadow: inset 0 -2px 0 #cccccc;
+}
+.btn.btn-default:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+.btn.btn-primary {
+  background-color: #3498db;
+}
+.btn.btn-primary.btn-border {
+  border-color: #3498db;
+  color: #3498db;
+}
+.btn.btn-primary.btn-3d {
+  box-shadow: inset 0 -2px 0 #196090;
+}
+.btn.btn-primary:hover {
+  background-color: #217dbb;
+  color: #fff;
+}
+.btn.btn-success {
+  background-color: #2ecc71;
+}
+.btn.btn-success.btn-border {
+  border-color: #2ecc71;
+  color: #2ecc71;
+}
+.btn.btn-success.btn-3d {
+  box-shadow: inset 0 -2px 0 #1b7943;
+}
+.btn.btn-success:hover {
+  background-color: #25a25a;
+  color: #fff;
+}
+.btn.btn-info {
+  background-color: #81cfe0;
+}
+.btn.btn-info.btn-border {
+  border-color: #81cfe0;
+  color: #81cfe0;
+}
+.btn.btn-info.btn-3d {
+  box-shadow: inset 0 -2px 0 #32aec9;
+}
+.btn.btn-info:hover {
+  background-color: #58bfd6;
+  color: #fff;
+}
+.btn.btn-warning {
+  background-color: #f39c12;
+}
+.btn.btn-warning.btn-border {
+  border-color: #f39c12;
+  color: #f39c12;
+}
+.btn.btn-warning.btn-3d {
+  box-shadow: inset 0 -2px 0 #976008;
+}
+.btn.btn-warning:hover {
+  background-color: #c87f0a;
+  color: #fff;
+}
+.btn.btn-danger {
+  background-color: #c0392b;
+}
+.btn.btn-danger.btn-border {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+.btn.btn-danger.btn-3d {
+  box-shadow: inset 0 -2px 0 #6d2018;
+}
+.btn.btn-danger:hover {
+  background-color: #962d22;
+  color: #fff;
+}
+.btn.btn-lg {
+  font-size: 14px;
+  padding: 17px 24px;
+}
+.btn.btn-sm {
+  padding: 9px 14px;
+}
+.btn.btn-xs {
+  font-size: 11px;
+  padding: 7px 12px;
+}
+.btn.btn-border {
+  border: 2px solid;
+  background: transparent;
+}
+.btn.btn-round {
+  -webkit-border-radius: 40px;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 40px;
+  -moz-background-clip: padding;
+  border-radius: 40px;
+  background-clip: padding-box;
+}
+.btn.btn-square {
+  -webkit-border-radius: 0;
+  -webkit-background-clip: padding-box;
+  -moz-border-radius: 0;
+  -moz-background-clip: padding;
+  border-radius: 0;
+  background-clip: padding-box;
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Bootstrap Clean Buttons</h1>
+</header>
+<section class="one">
+  <div class="wrap"><a class="btn btn-default btn-lg" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary btn-lg" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success btn-lg" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-info btn-lg" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-warning btn-lg" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-danger btn-lg" href="#">BOOTSTRAP BUTTON	</a></div>
+</section>
+<section class="two">
+  <div class="wrap"><a class="btn btn-default btn-lg btn-border" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary btn-lg btn-border" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success btn-lg btn-border" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-info btn-lg btn-border" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-warning btn-lg btn-border" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-danger btn-lg btn-border" href="#">BOOTSTRAP BUTTON	</a></div>
+</section>
+<section class="three">
+  <div class="wrap"><a class="btn btn-default btn-lg btn-round" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary btn-lg btn-round" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success btn-lg btn-round" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-info btn-lg btn-round" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-warning btn-lg btn-round" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-danger btn-lg btn-round" href="#">BOOTSTRAP BUTTON	</a></div>
+</section>
+<section class="four">
+  <div class="wrap"><a class="btn btn-default btn-lg btn-square" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary btn-lg btn-square" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success btn-lg btn-square" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-info btn-lg btn-square" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-warning btn-lg btn-square" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-danger btn-lg btn-square" href="#">BOOTSTRAP BUTTON	</a></div>
+</section>
+<section class="five">
+  <div class="wrap"><a class="btn btn-default btn-lg btn-3d" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary btn-lg btn-3d" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success btn-lg btn-3d" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-info btn-lg btn-3d btn-round" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-warning btn-lg btn-3d btn-round" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-danger btn-lg btn-3d btn-round" href="#">BOOTSTRAP BUTTON</a></div>
+</section>
+<section class="six">
+  <div class="wrap"><a class="btn btn-default" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success" href="#">BOOTSTRAP BUTTON</a>
+    <div class="clearfix"></div><a class="btn btn-default btn-sm" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary btn-sm" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success btn-sm" href="#">BOOTSTRAP BUTTON	</a>
+    <div class="clearfix"></div><a class="btn btn-default btn-xs" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary btn-xs" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success btn-xs" href="#">BOOTSTRAP BUTTON	</a>
+  </div>
+</section>
+<section class="seven">
+  <div class="wrap"><a class="btn btn-default btn-block" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-primary btn-block" href="#">BOOTSTRAP BUTTON</a><a class="btn btn-success btn-block" href="#">BOOTSTRAP BUTTON	</a></div>
+</section>
+</body>
+</html>
