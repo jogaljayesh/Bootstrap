@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>menu width moving up item</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	
+body { background-color: #072347; padding: 50px 0; }
+* {box-sizing: border-box;}
+
+/*color for icons and fonts*/
+.icon-green { background-color: #02534A; color: #00C06B; }
+.font-green {color: #00C06B;}
+
+.icon-dred {background-color: #503348; color: #f16165;}
+.font-dred {color: #f16165;}
+
+.icon-purple { background-color: #493664; color: #dc6ebe;}
+.font-purple { color: #dc6ebe; }
+
+.icon-orange { background-color: #544034; color: #ff8c2a;}
+.font-orange { color: #ff8c2a; }
+
+.menu-wrapper {background-color: #051d3b;border-radius: 8px;border: 1.5px solid #174987;box-shadow: 0 1px .5px #000;margin: 8px;padding: 8px;width: 190px;position: relative;bottom: 0;transition: all .5s;text-align: center;}
+.menu-wrapper:hover { border: 1.5px solid #74c0fc; bottom: 10px;}
+.menu-wrapper h3 {font-family: "Roboto Mono", "Courier New", monospace;font-size: 12px;line-height: 18px;padding-top: 12px;}
+.menu-wrapper h2 {font-family: 'Inter', sans-serif;font-size: 13px;text-transform: uppercase;font-weight: 800;line-height: 5px;padding-bottom: 12px;}
+.menu-wrapper a {text-decoration: none;}
+
+.source { color: #74c0fc; font-family: "Roboto Mono", "Courier New", monospace; font-size: 12px; }
+.source ul { list-style: none; padding: 10px; }
+.source img { width: 10%; }
+
+@media (min-width: 768px) {
+    body { padding: 100px 0; }
+    .menu-wrapper {width: 200px;height: 208px;text-align: start;margin: 4px;padding: 16px;}
+    .source img { width: 5%; }
+    .menu-wrapper span { border-radius: 4px;font-size: 30px;width: 100%;height: 40px;display: flex !important;align-items: center;justify-content: center;}
+    .menu-wrapper p {color: rgb(153, 152, 152); font-size: 12px;}
+    .menu-wrapper .item { color: #fff;}
+    .menu-wrapper .item:hover { text-decoration: underline;}
+}
+
+</style>
+
+</head>
+<body>
+<nav class="container">
+    <div class="row justify-content-center">
+      <div class="menu-wrapper col-6 col-md-4">
+        <a href="#0">
+          <header class="font-green">
+            <span class="material-symbols-rounded icon-green d-none">
+              terminal
+            </span>
+            <h3>Tag_</h3>
+            <h2>title</h2>
+          </header>
+          <p class="d-none d-md-block"><a class="item" href="#0">item 1</a>, <a class="item" href="#0">item 2</a>, <a class="item" href="#0">item 3</a>, <a class="item" href="#0">item 4</a>
+        </a>
+      </div>
+      <div class="menu-wrapper col-6 col-md-4">
+        <a href="#0">
+          <header class="font-orange">
+            <span class="material-symbols-rounded icon-orange d-none">
+              code
+            </span>
+            <h3>Tag_</h3>
+            <h2>title</h2>
+          </header>
+          <p class="d-none d-md-block"><a class="item" href="#0">item 1</a>, <a class="item" href="#0">item 2</a>, <a class="item" href="#0">item 3</a>, <a class="item" href="#0">item 4</a>, <a class="item" href="#0">item 5</a>, <a class="item" href="#0">item 6</a>, <a class="item" href="#0">item 7</a>, <a class="item" href="#0">item 8</a>, <a class="item" href="#0">item 9</a>, <a class="item" href="#0">item 10</a>, <a class="item" href="#0">item 11</a>, <a class="item" href="#0">item 12</a></p>
+        </a>
+      </div>
+      <div class="menu-wrapper col-6 col-md-4">
+        <a href="#0">
+          <header class="font-purple">
+            <span class="material-symbols-rounded icon-purple d-none">
+              smartphone
+            </span>
+            <h3>Tag_</h3>
+            <h2>title</h2>
+          </header>
+          <p class="d-none d-md-block"><a class="item" href="#0">item 1</a>, <a class="item" href="#0">item 2</a>, <a class="item" href="#0">item 3</a>, <a class="item" href="#0">item 4</a>, <a class="item" href="#0">item 5</a>, <a class="item" href="#0">item 6</a>, <a class="item" href="#0">item 7</a>, <a class="item" href="#0">item 8</a></p>
+        </a>
+      </div>
+
+      <div class="menu-wrapper col-6 col-md-4">
+        <a href="#0">
+          <header class="font-dred">
+            <span class="material-symbols-rounded icon-dred d-none">
+              settings
+            </span>
+            <h3>Tag_</h3>
+            <h2>title</h2>
+          </header>
+          <p class="d-none d-md-block"><a class="item" href="#0">item 1</a>, <a class="item" href="#0">item 2</a>, <a class="item" href="#0">item 3</a>, <a class="item" href="#0">item 4</a>, <a class="item" href="#0">item 5</a>, <a class="item" href="#0">item 6</a>, <a class="item" href="#0">item 7</a>, <a class="item" href="#0">item 8</a>, <a class="item" href="#0">item 9</a>, <a class="item" href="#0">item 10</a></p>
+        </a>
+      </div>
+
+    </div>
+  </nav>
+</body>
+</html>
