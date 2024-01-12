@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>color fliper</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<style type="text/css">
+	
+.body {
+  background-color: #0e6655; 
+}
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 47.5%;
+}
+
+
+.hidden {
+  background-color: #a2d9ce;
+}
+</style>
+
+<body class="body">
+ 	<div class="button">
+      <button type="button" class="btn btn-dark dark">Dark</button>
+      <button type="button" class="btn btn-light light">Light</button>
+    </div>
+
+<script type="text/javascript">
+	
+const background = document.querySelector("body");
+const dark = document.querySelector(".dark");
+const light = document.querySelector(".light");
+
+const darkColor = function () {
+  background.classList.remove("hidden");
+  console.log("dark to light");
+};
+
+const lightColor = function () {
+  background.classList.add("hidden");
+  console.log("light to dark");
+};
+
+dark.addEventListener("click", darkColor);
+
+light.addEventListener("click", lightColor);
+</script>
+
+</body>
+</html>
